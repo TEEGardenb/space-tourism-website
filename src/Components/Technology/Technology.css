@@ -1,0 +1,74 @@
+.technology-component {
+  min-height: calc(100vh);
+  background-image: url("../../assets/technology/background-technology-mobile.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: absolute;
+  top: 0%;
+}
+
+.title-technology {
+  font-size: 2.5rem;
+  color: aliceblue;
+}
+
+.section-technology {
+  margin-top: 6rem;
+}
+
+.number-container {
+  position: relative;
+  width: 100%;
+}
+
+.number-container.number-size {
+  font-size: 2rem;
+}
+
+.border {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.cursor:active {
+  background-color: #fff;
+  color: black;
+}
+
+.active {
+  background-color: #fff;
+  color: #000;
+}
+
+@media screen and (min-width: 768px) {
+  .technology-component {
+    background-image: url("../../assets/technology/background-technology-tablet.jpg");
+  }
+  .section-technology {
+    margin-top: 12rem;
+  }
+
+  .number-container {
+    width: 350px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .technology-component {
+    background-image: url("../../assets/technology/background-technology-desktop.jpg");
+  }
+  .section-technology {
+    margin-top: 10rem;
+  }
+
+  .cursor:hover {
+    background-color: #fff;
+    color: black;
+  }
+
+  .number-container {
+    width: 200px;
+  }
+}

@@ -1,0 +1,69 @@
+.crew-component {
+  min-height: 100vh;
+  background-image: url("../../assets/crew/background-crew-mobile.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: absolute;
+  top: 0%;
+}
+
+.title-crew {
+  color: aliceblue;
+}
+
+.section-crew {
+  margin-top: 6rem;
+}
+
+ul li.position-crew {
+  position: relative;
+}
+
+.estilo {
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+  padding: 8px;
+}
+
+.estilo:active {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 0.5rem;
+  color: #d1d1d1;
+}
+
+.active-crew::after {
+  content: "";
+  background-color: #fff;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  left: 0px;
+  bottom: -3px;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .crew-component {
+    background-image: url("../../assets/crew/background-crew-tablet.jpg");
+  }
+  .section-crew {
+    margin-top: 12rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .crew-component {
+    background-image: url("../../assets/crew/background-crew-desktop.jpg");
+  }
+  .section-crew {
+    margin-top: 10rem;
+  }
+
+  .estilo:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 0.5rem;
+    color: #d1d1d1;
+  }
+}
