@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 import data from "../../data.json";
 import "./Destination.css";
+import DestinationList from "./DestinationList";
 
 const Destiantion = () => {
   const { destinations } = data;
@@ -31,17 +32,10 @@ const Destiantion = () => {
           </figure>
         </div>
         <div className="col-12 col-lg-4 color mb-4 right">
-          <ul className="d-flex gap-2">
-            {destinations.map((destination, index) => (
-              <li
-                className="color pointer"
-                key={index}
-                onClick={() => handleDestinationClick(index)}
-              >
-                <Link className="navbar-brand">{destination.name}</Link>
-              </li>
-            ))}
-          </ul>
+          <DestinationList
+            destinations={destinations}
+            handleDestinationClick={handleDestinationClick}
+          />
           <h2 className="title-destination_2 color px-4">
             {selectedDestination.name}
           </h2>
