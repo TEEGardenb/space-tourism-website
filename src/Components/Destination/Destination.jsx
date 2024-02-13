@@ -1,9 +1,8 @@
 import React from "react";
-import { useState, useEffect } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { useState } from "react";
 import data from "../../data.json";
-import "./Destination.css";
 import DestinationList from "./DestinationList";
+import "./Destination.css";
 
 const Destiantion = () => {
   const { destinations } = data;
@@ -12,8 +11,11 @@ const Destiantion = () => {
     destinations[0]
   );
 
+  const [activeIndex, setActiveIndex] = useState(0);
+
   const handleDestinationClick = (index) => {
     setSelectedDestination(destinations[index]);
+    setActiveIndex(index);
   };
 
   return (
@@ -21,7 +23,8 @@ const Destiantion = () => {
       <article className="row justify-content-center gap-5 left">
         <div className="col-12 col-lg-4 d-flex flex-column align-items-center">
           <h1 className="title-destination mb-5 text-start">
-            01 PICK YOUR DESTINATION
+            <span className="num-color-destination">01</span> PICK YOUR
+            DESTINATION
           </h1>
           <figure className="container-img">
             <img
@@ -39,11 +42,12 @@ const Destiantion = () => {
                 destination={items}
                 index={index}
                 handleDestinationClick={handleDestinationClick}
+                activeIndex={activeIndex}
               />
             ))}
           </ul>
           <h2 className="title-destination_2 color px-4">
-            {selectedDestination.name}
+            {selectedDestination.name.toUpperCase()}
           </h2>
           <p className="px-4">{selectedDestination.description}</p>
           <hr />

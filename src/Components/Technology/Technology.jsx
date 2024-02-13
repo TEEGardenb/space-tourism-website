@@ -32,9 +32,12 @@ const Technology = () => {
             <div>
               <span className="text-center">THE TERMINOLOGY...</span>
               <h4 className="title-technology mb-4">
-                {SelectedTechnology.name}
+                {SelectedTechnology.name.toUpperCase()}
               </h4>
-              <p className="mb-4" style={{ minHeight: "168px" }}>
+              <p
+                className="width-description-tech mb-4"
+                style={{ minHeight: "168px" }}
+              >
                 {SelectedTechnology.description}
               </p>
             </div>

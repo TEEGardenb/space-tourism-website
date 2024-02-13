@@ -42,6 +42,16 @@
   color: #000;
 }
 
+p.width-description-tech {
+  width: 100%;
+}
+
+div span.size-index {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+}
+
 @media screen and (min-width: 768px) {
   .technology-component {
     background-image: url("../../assets/technology/background-technology-tablet.jpg");
@@ -52,6 +62,10 @@
 
   .number-container {
     width: 350px;
+  }
+
+  p.width-description-tech {
+    width: 85%;
   }
 }
 

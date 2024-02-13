@@ -22,13 +22,17 @@ const Crew = () => {
         <div className="row">
           <div className="col-12 col-md-6 color text-center text-md-start">
             <h2 className="title-crew text-center text-md-start mb-5">
-              02 MEET YOUR CREW
+              <span className="light-color-crew">02</span> MEET YOUR CREW
             </h2>
-            <h6 className="mb-3">{selectedCrew.role.toUpperCase()}</h6>
-            <h4 className="mb-4">{selectedCrew.name.toUpperCase()}</h4>
+            <h6 className="light-color-crew role-size mb-3">
+              {selectedCrew.role.toUpperCase()}
+            </h6>
+            <h4 className="name-size mb-4">
+              {selectedCrew.name.toUpperCase()}
+            </h4>
             <p
-              className="mb-5"
-              style={{ minHeight: "96px", overflow: "hidden" }}
+              className="color-bio-crew width-bio-crew mb-5"
+              style={{ minHeight: "120px", overflow: "hidden" }}
             >
               {selectedCrew.bio}
             </p>

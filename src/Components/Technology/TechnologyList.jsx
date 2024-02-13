@@ -4,12 +4,12 @@ const TechnologyList = ({ index, eventClick, activeIndex }) => {
   return (
     <div
       key={index}
-      className={`border cursor px-3 d-flex justify-content-center ${
+      className={`border cursor d-flex justify-content-center ${
         index === activeIndex ? "active" : ""
       }`}
       onClick={() => eventClick(index)}
     >
-      {index + 1}
+      <span className="size-index">{index + 1}</span>
     </div>
   );
 };

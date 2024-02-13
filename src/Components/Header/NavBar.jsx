@@ -4,20 +4,6 @@ import Logo from "../../../public/assets/shared/logo.svg";
 import { Link, NavLink } from "react-router-dom";
 
 const NavBar = () => {
-  const [sidebarOpen, setSidebarOpen] = useState(false);
-
-  const toogleSidebarOpen = () => {
-    setSidebarOpen(!sidebarOpen);
-  };
-
-  const closeSidebar = () => {
-    setSidebarOpen(false);
-    const backdrop = document.querySelector(".offcanvas-backdrop");
-    if (backdrop) {
-      backdrop.classList.remove("show");
-    }
-  };
-
   return (
     <nav className="navbar navbar-dark navbar-expand-lg navbar-expand-md ps-lg-5 ps-md-5">
       <div className="container-fluid">
@@ -31,14 +17,11 @@ const NavBar = () => {
           data-bs-target="#offcanvasDarkNavbar"
           aria-controls="offcanvasDarkNavbar"
           aria-label="Toggle navigation"
-          onClick={toogleSidebarOpen}
         >
           <span className="navbar-toggler-icon"></span>
         </button>
         <div
-          className={`offcanvas offcanvas-end text-bg-dark ${
-            sidebarOpen ? "show" : ""
-          }`}
+          className="offcanvas offcanvas-end text-bg-dark"
           tabIndex="-1"
           id="offcanvasDarkNavbar"
           aria-labelledby="offcanvasDarkNavbarLabel"
@@ -57,11 +40,7 @@ const NavBar = () => {
           <div className="offcanvas-body">
             <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
               <div className="glass-container justify-content-end navbar-nav pe-3">
-                <li
-                  className="nav-item"
-                  data-bs-dismiss="offcanvas"
-                  aria-label="Close"
-                >
+                <li className="nav-item li-color" data-bs-dismiss="offcanvas">
                   <NavLink
                     className="nav-link"
                     activeclassname="active"
@@ -71,13 +50,9 @@ const NavBar = () => {
                     00 HOME
                   </NavLink>
                 </li>
-                <li
-                  className="nav-item"
-                  data-bs-dismiss="offcanvas"
-                  aria-label="Close"
-                >
+                <li className="nav-item li-color" data-bs-dismiss="offcanvas">
                   <NavLink
-                    className="nav-link"
+                    className="nav-link li-color"
                     activeclassname="active"
                     aria-current="page"
                     to="/Destination"
@@ -85,13 +60,9 @@ const NavBar = () => {
                     01 DESTINATION
                   </NavLink>
                 </li>
-                <li
-                  className="nav-item"
-                  data-bs-dismiss="offcanvas"
-                  aria-label="Close"
-                >
+                <li className="nav-item" data-bs-dismiss="offcanvas">
                   <NavLink
-                    className="nav-link"
+                    className="nav-link li-color"
                     activeclassname="active"
                     aria-current="page"
                     to="/Crew"
@@ -99,11 +70,7 @@ const NavBar = () => {
                     02 CREW
                   </NavLink>
                 </li>
-                <li
-                  className="nav-item"
-                  data-bs-dismiss="offcanvas"
-                  aria-label="Close"
-                >
+                <li className="nav-item li-color" data-bs-dismiss="offcanvas">
                   <NavLink
                     className="nav-link"
                     aria-current="page"

@@ -44,12 +44,46 @@ ul li.position-crew {
   border-radius: 10px;
 }
 
+.light-color-crew {
+  color: rgb(166, 173, 182);
+}
+
+h4.name-size {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+p.width-bio-crew {
+  width: 100%;
+}
+
+.color-bio-crew {
+  color: rgb(210, 216, 224);
+}
+
 @media screen and (min-width: 768px) {
   .crew-component {
     background-image: url("../../assets/crew/background-crew-tablet.jpg");
   }
   .section-crew {
     margin-top: 12rem;
+  }
+
+  .title-crew {
+    letter-spacing: 0.3rem;
+    font-size: 1.6rem;
+  }
+
+  h6.role-size {
+    font-size: 1.4rem;
+  }
+
+  h4.name-size {
+    font-size: 2.5rem;
+  }
+
+  p.width-bio-crew {
+    width: 75%;
   }
 }
 

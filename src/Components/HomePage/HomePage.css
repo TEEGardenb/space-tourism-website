@@ -22,10 +22,9 @@
 }
 
 .title {
-  font-size: 5rem;
   width: max-content;
   color: #fff;
-  font-size: 6rem;
+  font-size: 5rem;
 }
 
 .general-container {
@@ -71,6 +70,10 @@
   .subtitle-2 {
     letter-spacing: 0.3rem;
     font-size: 1.3rem;
+  }
+
+  .title {
+    font-size: 6rem;
   }
 }
 
