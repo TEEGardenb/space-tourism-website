@@ -4,6 +4,7 @@ import "./Crew.css";
 import crews from "../../data.json";
 import douglas from "../../../public/assets/crew/image-douglas-hurley.png";
 import { Link, NavLink } from "react-router-dom";
+import CrewList from "./CrewList";
 
 const Crew = () => {
   const { crew } = crews;
@@ -11,7 +12,7 @@ const Crew = () => {
 
   const [activeIndex, setActiveIndex] = useState(0);
 
-  const handleCrew = (index) => {
+  const handleCrewClick = (index) => {
     setSelectedCrew(crew[index]);
     setActiveIndex(index);
   };
@@ -33,23 +34,14 @@ const Crew = () => {
             </p>
             <ul className="d-flex gap-4 flex-wrap p-0 justify-content-center">
               {crew.map((crew, index) => (
-                <li
-                  className="position-crew cursor-crew"
+                <CrewList
                   key={index}
-                  onClick={() => handleCrew(index)}
-                >
-                  <a
-                    className={`estilo ${
-                      index === activeIndex ? "active-crew" : ""
-                    }`}
-                  >
-                    {crew.name}
-                  </a>
-                </li>
+                  crew={crew}
+                  handleCrewClick={handleCrewClick}
+                  index={index}
+                  activeIndex={activeIndex}
+                />
               ))}
-              <li>
-                <a href=""></a>
-              </li>
             </ul>
           </div>
           <div className="col-12 col-md-6 d-flex flex-column align-items-center">

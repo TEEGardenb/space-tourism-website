@@ -32,10 +32,16 @@ const Destiantion = () => {
           </figure>
         </div>
         <div className="col-12 col-lg-4 color mb-4 right">
-          <DestinationList
-            destinations={destinations}
-            handleDestinationClick={handleDestinationClick}
-          />
+          <ul className="d-flex gap-2">
+            {destinations.map((items, index) => (
+              <DestinationList
+                key={index}
+                destination={items}
+                index={index}
+                handleDestinationClick={handleDestinationClick}
+              />
+            ))}
+          </ul>
           <h2 className="title-destination_2 color px-4">
             {selectedDestination.name}
           </h2>

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Technology.css";
 import technologys from "../../data.json";
+import TechnologyList from "./TechnologyList";
 
 const Technology = () => {
   const { technology } = technologys;
@@ -20,15 +21,12 @@ const Technology = () => {
           <article className="col-12 col-md-6 color d-flex flex-column flex-md-row align-items-center align-items-md-start">
             <div className="number-container number-size d-flex flex-row flex-md-column gap-4 gap-md-4 mb-3 me-md-5 justify-content-center">
               {technology.map((technologys, index) => (
-                <div
+                <TechnologyList
                   key={index}
-                  className={`border cursor px-3 d-flex justify-content-center ${
-                    index === activeIndex ? "active" : ""
-                  }`}
-                  onClick={() => handleTechnologyClick(index)}
-                >
-                  {index + 1}
-                </div>
+                  index={index}
+                  eventClick={handleTechnologyClick}
+                  activeIndex={activeIndex}
+                />
               ))}
             </div>
             <div>
