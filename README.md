@@ -4,8 +4,8 @@
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/TEEGardenb/space-tourism-website.git)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution URL here](https://github.com/TEEGardenb/space-tourism-website.git)
+- Live Site URL: [Live site URL here](https://your-live-site-url.com)
 
 # Frontend Mentor - Space tourism website solution
 
