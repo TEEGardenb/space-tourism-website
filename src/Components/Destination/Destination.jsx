@@ -2,6 +2,10 @@ import React from "react";
 import { useState } from "react";
 import data from "../../data.json";
 import DestinationList from "./DestinationList";
+import luna from "/src/assets/destination/image-moon.png";
+import mars from "/src/assets/destination/image-mars.png";
+import europa from "/src/assets/destination/image-europa.png";
+import titan from "/src/assets/destination/image-titan.png";
 import "./Destination.css";
 
 const Destiantion = () => {

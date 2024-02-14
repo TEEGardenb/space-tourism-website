@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import technologys from "../../data.json";
 import TechnologyList from "./TechnologyList";
+import Launch from "/src/assets/technology/image-launch-vehicle-portrait.jpg";
+import Spaceport from "/src/assets/technology/image-spaceport-portrait.jpg";
+import capsule from "/src/assets/technology/image-space-capsule-portrait.jpg";
 import "./Technology.css";
 
 const Technology = () => {

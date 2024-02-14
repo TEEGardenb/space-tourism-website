@@ -3,6 +3,10 @@ import { useState } from "react";
 import "./Crew.css";
 import crews from "../../data.json";
 import CrewList from "./CrewList";
+import Douglas from "/src/assets/crew/image-douglas-hurley.png";
+import Mark from "/src/assets/crew/image-mark-shuttleworth.png";
+import Victor from "/src/assets/crew/image-victor-glover.png";
+import Anousheh from "/src/assets/crew/image-anousheh-ansari.png";
 
 const Crew = () => {
   const { crew } = crews;
