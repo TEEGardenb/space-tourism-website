@@ -2,12 +2,13 @@ import React, { useState } from "react";
 import "./NavBar.css";
 import Logo from "/src/assets/shared/logo.svg";
 import { Link, NavLink } from "react-router-dom";
+import { baseUrl } from "../MyRoutes/MyRoutes";
 
 const NavBar = () => {
   return (
     <nav className="navbar navbar-dark navbar-expand-lg navbar-expand-md ps-lg-5 ps-md-5">
       <div className="container-fluid">
-        <Link className="navbar-brand" to="/">
+        <Link className="navbar-brand" to={`${baseUrl}`}>
           <img src={Logo} alt="logo" />
         </Link>
         <button
@@ -45,7 +46,7 @@ const NavBar = () => {
                     className="nav-link"
                     activeclassname="active"
                     aria-current="page"
-                    to="/"
+                    to={`${baseUrl}`}
                   >
                     00 HOME
                   </NavLink>
@@ -55,7 +56,7 @@ const NavBar = () => {
                     className="nav-link li-color"
                     activeclassname="active"
                     aria-current="page"
-                    to="/Destination"
+                    to={`${baseUrl}/Destination`}
                   >
                     01 DESTINATION
                   </NavLink>
@@ -65,7 +66,7 @@ const NavBar = () => {
                     className="nav-link li-color"
                     activeclassname="active"
                     aria-current="page"
-                    to="/Crew"
+                    to={`${baseUrl}/Crew`}
                   >
                     02 CREW
                   </NavLink>
@@ -74,7 +75,7 @@ const NavBar = () => {
                   <NavLink
                     className="nav-link"
                     aria-current="page"
-                    to="/Technology"
+                    to={`${baseUrl}/Technology`}
                   >
                     03 TECHNOLOGY
                   </NavLink>

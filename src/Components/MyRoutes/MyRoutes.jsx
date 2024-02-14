@@ -5,14 +5,16 @@ import Destination from "../Destination/Destination";
 import Crew from "../Crew/Crew";
 import Technology from "../Technology/Technology";
 
+export const baseUrl = "/space-tourism-website";
+
 const MyRoutes = () => {
   return (
     <div>
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/Destination" element={<Destination />} />
-        <Route path="/Crew" element={<Crew />} />
-        <Route path="/Technology" element={<Technology />} />
+        <Route path={`${baseUrl}`} element={<HomePage />} />
+        <Route path={`${baseUrl}/Destination`} element={<Destination />} />
+        <Route path={`${baseUrl}/Crew`} element={<Crew />} />
+        <Route path={`${baseUrl}/Technology`} element={<Technology />} />
       </Routes>
     </div>
   );
