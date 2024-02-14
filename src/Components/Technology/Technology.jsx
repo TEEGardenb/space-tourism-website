@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "./Technology.css";
 import technologys from "../../data.json";
 import TechnologyList from "./TechnologyList";
+import "./Technology.css";
 
 const Technology = () => {
   const { technology } = technologys;
@@ -46,7 +46,7 @@ const Technology = () => {
             <figure className="img-container">
               <img
                 src={SelectedTechnology.images.portrait}
-                alt=""
+                alt={SelectedTechnology.name}
                 style={{ width: "100%" }}
               />
             </figure>
