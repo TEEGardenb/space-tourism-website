@@ -1,6 +1,6 @@
 .crew-component {
   min-height: 100vh;
-  background-image: url("../../assets/crew/background-crew-mobile.jpg");
+  background-image: url("/assets/crew/background-crew-mobile.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -63,7 +63,7 @@ p.width-bio-crew {
 
 @media screen and (min-width: 768px) {
   .crew-component {
-    background-image: url("../../assets/crew/background-crew-tablet.jpg");
+    background-image: url("/assets/crew/background-crew-tablet.jpg");
   }
   .section-crew {
     margin-top: 12rem;
@@ -89,7 +89,7 @@ p.width-bio-crew {
 
 @media screen and (min-width: 1200px) {
   .crew-component {
-    background-image: url("../../assets/crew/background-crew-desktop.jpg");
+    background-image: url("/assets/crew/background-crew-desktop.jpg");
   }
   .section-crew {
     margin-top: 10rem;
