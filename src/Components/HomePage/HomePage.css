@@ -1,6 +1,6 @@
 .home {
   min-height: 100vh;
-  background-image: url(/assets/Home/background-home-mobile.jpg);
+  background-image: url(/src/assets/Home/background-home-mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
@@ -51,7 +51,7 @@
 
 @media screen and (min-width: 768px) {
   .home {
-    background-image: url(/assets/Home/background-home-tablet.jpg);
+    background-image: url(/src/assets/Home/background-home-tablet.jpg);
   }
 
   .position {
@@ -79,7 +79,7 @@
 
 @media screen and (min-width: 1200px) {
   .home {
-    background-image: url(/assets/Home/background-home-desktop.jpg);
+    background-image: url(/src/assets/Home/background-home-desktop.jpg);
   }
 
   .general-container {

@@ -2,8 +2,6 @@ import React from "react";
 import { useState } from "react";
 import "./Crew.css";
 import crews from "../../data.json";
-import douglas from "../../../public/assets/crew/image-douglas-hurley.png";
-import { Link, NavLink } from "react-router-dom";
 import CrewList from "./CrewList";
 
 const Crew = () => {

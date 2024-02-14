@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./NavBar.css";
-import Logo from "../../../public/assets/shared/logo.svg";
+import Logo from "/src/assets/shared/logo.svg";
 import { Link, NavLink } from "react-router-dom";
 
 const NavBar = () => {
