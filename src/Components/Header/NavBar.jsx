@@ -8,7 +8,7 @@ const NavBar = () => {
   return (
     <nav className="navbar navbar-dark navbar-expand-lg navbar-expand-md ps-lg-5 ps-md-5">
       <div className="container-fluid">
-        <Link className="navbar-brand" to={`${baseUrl}`}>
+        <Link className="navbar-brand" to={`${baseUrl}/`}>
           <img src={Logo} alt="logo" />
         </Link>
         <button
@@ -46,7 +46,7 @@ const NavBar = () => {
                     className="nav-link"
                     activeclassname="active"
                     aria-current="page"
-                    to={`${baseUrl}`}
+                    to={`${baseUrl}/`}
                   >
                     00 HOME
                   </NavLink>

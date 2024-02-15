@@ -11,7 +11,7 @@ const MyRoutes = () => {
   return (
     <div>
       <Routes>
-        <Route path={`${baseUrl}`} element={<HomePage />} />
+        <Route path={`${baseUrl}/`} element={<HomePage />} />
         <Route path={`${baseUrl}/Destination`} element={<Destination />} />
         <Route path={`${baseUrl}/Crew`} element={<Crew />} />
         <Route path={`${baseUrl}/Technology`} element={<Technology />} />
